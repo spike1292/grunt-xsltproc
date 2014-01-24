@@ -56,6 +56,11 @@ module.exports = function(grunt) {
         if (options.xinclude) {
           args.push('--xinclude');
         }
+
+        // Add HTML support
+        if (options.html) {
+          args.push('--html');
+        }
         
         // Add novalid support
         if (options.novalid) {
